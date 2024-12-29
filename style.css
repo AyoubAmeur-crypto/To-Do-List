@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    list-style: none;
+    font-family: "Oswald","Sans-serif";
+}
+
+body{
+
+    height: 100vh;
+    background: rgb(163,121,255);
+background: linear-gradient(27deg, rgba(163,121,255,1) 4%, rgba(159,172,255,1) 36%, rgba(169,233,255,1) 72%, rgba(208,239,255,0.9977240896358543) 100%);
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.classy{
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 16px rgb(144, 144, 144);
+    position: relative;
+    transition: .3s ease;
+}
+
+.classy:hover{
+
+    scale: calc(1.04);
+}
+
+.classy li {
+
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.classy input{
+
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 13px;
+    
+    border: none;
+    border-bottom: 1px solid rgb(142, 141, 141)
+}
+
+.classy button{
+
+    margin-top: 10px;
+    max-width: 30px;
+    position: absolute;
+    bottom: -26px;
+    font-size: 35px;
+    right: 50%;
+    background-color: transparent;
+    color: rgb(51, 54, 255);
+    cursor: pointer;
+    transition: .7s ease;
+    border: none;
+
+
+
+}
+.obj{
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.obj p{
+
+    color: rgba(69, 69, 69, 0.803);
+    border-bottom: 2px solid rgba(100, 100, 100, 0.803);
+}
+
+.classy button:hover{
+
+    color: tomato;
+}
+
+
+
+
+
+@media (max-width:720px){
+
+    .classy{
+
+        width: 250px;
+    }
+
+    .classy button{
+
+     
+        right: 113px;
+        font-size: 31px;
+        bottom: -22px;
+
+        
+    
+    
+    }
+}
